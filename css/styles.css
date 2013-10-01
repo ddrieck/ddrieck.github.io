@@ -1,239 +1,302 @@
+* {
+	margin: 0; 
+	padding: 0;
+}
 
-	/* <!-- */
-	/* General styles */
-	body {
-		margin:0;
-		padding:0;
-		border:0;			/* This removes the border around the viewport in old versions of IE */
-		width:100%;
-		background:#fff;
-		min-width:600px;		/* Minimum width of layout - remove line if not required */
-						/* The min-width property does not work in old versions of Internet Explorer */
-		font-size:90%;
+body {
+	background-image:url('http://www.ddrieck.com/images/background.jpg');
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-color: gray;
+	font-family: arial, verdana, tahoma;
+}
+
+.title h1 {
+	position: absolute;
+	top: 10%;
+	left: 100px;
+	font-size: 5em;
+	color: white;
+	font-family: arial, verdana, sans-serif;
 	}
-	a {
-		color:#369;
-	}
-	a:hover {
-		color:#fff;
-		background:#369;
-		text-decoration:none;
-	}
-	h1, h2, h3 {
-		margin:.8em 0 .2em 0;
-		padding:0;
-	}
-	p {
-		margin:.4em 0 .8em 0;
-		padding:0;
-	}
-	img {
-		margin:10px 0 5px;
-	}
-	/* Header styles */
-	#header {
-		clear:both;
-		float:left;
-		width:100%;
-	}
-	#header {
-		border-bottom:1px solid #000;
-	}
-	#header p,
-	#header h1,
-	#header h2 {
-		padding:.4em 15px 0 15px;
-		margin:0;
-	}
-	#header ul {
-		clear:left;
-		float:left;
-		width:100%;
-		list-style:none;
-		margin:10px 0 0 0;
-		padding:0;
-	}
-	#header ul li {
-		display:inline;
-		list-style:none;
-		margin:0;
-		padding:0;
-	}
-	#header ul li a {
-		display:block;
-		float:left;
-		margin:0 0 0 1px;
-		padding:3px 10px;
-		text-align:center;
-		background:#eee;
-		color:#000;
-		text-decoration:none;
-		position:relative;
-		left:15px;
-		line-height:1.3em;
-	}
-	#header ul li a:hover {
-		background:#369;
-		color:#fff;
-	}
-	#header ul li a.active,
-	#header ul li a.active:hover {
-		color:#fff;
-		background:#000;
-		font-weight:bold;
-	}
-	#header ul li a span {
-		display:block;
-	}
-	/* 'widths' sub menu */
-	#layoutdims {
-		clear:both;
-		background:#eee;
-		border-top:4px solid #000;
-		margin:0;
-		padding:6px 15px !important;
-		text-align:right;
-	}
-	/* column container */
-	.colmask {
-		position:relative;	/* This fixes the IE7 overflow hidden bug */
-		clear:both;
-		float:left;
-		width:100%;			/* width of whole page */
-		overflow:hidden;		/* This chops off any overhanging divs */
-	}
-	/* common column settings */
-	.colleft,
-	.colmid,
-	.colright {
-		float:left;
-		width:100%;
-		position:relative;
-	}
-	.col1,
-	.col2,
-	.col3 {
-		float:left;
-		position:relative;
-		padding:0 0 1em 0;
-		overflow:hidden;
-	}
-	/* 3 Column settings */
-	.threecol {
-		background:#eee;		/* right column background colour */
-	}
-	.threecol .colmid {
-		right:25%;			/* width of the right column */
-		background:#fff;		/* center column background colour */
-	}
-	.threecol .colleft {
-		right:50%;			/* width of the middle column */
-		background:#f4f4f4;	/* left column background colour */
-	}
-	.threecol .col1 {
-		width:46%;			/* width of center column content (column width minus padding on either side) */
-		left:102%;			/* 100% plus left padding of center column */
-	}
-	.threecol .col2 {
-		width:21%;			/* Width of left column content (column width minus padding on either side) */
-		left:31%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
-	}
-	.threecol .col3 {
-		width:21%;			/* Width of right column content (column width minus padding on either side) */
-		left:85%;			/* Please make note of the brackets here:
-						(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
-	}
-	/* 3 Column blog style settings */
-	.blogstyle {
-		background:#eee;		/* right column background colour */
-	}
-	.blogstyle .colmid {
-		right:25%;			/* width of the right column */
-		background:#f4f4f4;	/* center column background colour */
-	}
-	.blogstyle .colleft {
-		right:25%;			/* width of the middle column */
-		background:#fff;		/* left column background colour */
-	}
-	.blogstyle .col1 {
-		width:46%;			/* width of center column content (column width minus padding on either side) */
-		left:52%;			/* 100% plus left padding of center column */
-	}
-	.blogstyle .col2 {
-		width:21%;			/* Width of left column content (column width minus padding on either side) */
-		left:56%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
-	}
-	.blogstyle .col3 {
-		width:21%;			/* Width of right column content (column width minus padding on either side) */
-		left:60%;			/* Please make note of the brackets here:
-						(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
-	}
-	/* 2 Column (left menu) settings */
-	.leftmenu {
-		background:#fff;		/* right column background colour */
-	}
-	.leftmenu .colleft {
-		right:75%;			/* right column width */
-		background:#f4f4f4;	/* left column background colour */
-	}
-	.leftmenu .col1 {
-		width:71%;			/* right column content width */
-		left:102%;			/* 100% plus left column left padding */
-	}
-	.leftmenu .col2 {
-		width:21%;			/* left column content width (column width minus left and right padding) */
-		left:6%;			/* (right column left and right padding) plus (left column left padding) */
-	}
-	/* 2 Column (right menu) settings */
-	.rightmenu {
-		background:#eee;		/* right column background colour */
-	}
-	.rightmenu .colleft {
-		right:25%;			/* right column width */
-		background:#fff;		/* left column background colour */
-	}
-	.rightmenu .col1 {
-		width:71%;			/* left column content width (left column width minus left and right padding) */
-		left:27%;			/* (right column width) plus (left column left padding) */
-	}
-	.rightmenu .col2 {
-		width:21%;			/* right column content width (right column width minus left and right padding) */
-		left:31%;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
-	}
-	/* 2 Column (double page) settings */
-	.doublepage {
-		background:#eee;		/* right column background colour */
-	}
-	.doublepage .colleft {
-		right:50%;			/* right column width */
-		background:#fff;		/* left column background colour */
-	}
-	.doublepage .col1 {
-		width:46%;			/* left column content width (column width minus left and right padding) */
-		left:52%;			/* right column width plus left column left padding */
-	}
-	.doublepage .col2 {
-		width:46%;			/* right column content width (column width minus left and right padding) */
-		left:56%;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
-	}
-	/* Full page settings */
-	.fullpage {
-		background:#fff;		/* page background colour */
-	}
-	.fullpage .col1 {
-		width:96%;			/* page width minus left and right padding */
-		left:2%;			/* page left padding */
-	}
-	/* Footer styles */
-	#footer {
-		clear:both;
-		float:left;
-		width:100%;
-		border-top:1px solid #000;
-	}
-	#footer p {
-		padding:10px;
-		margin:0;
-	}
-	/* --> */
+
+/* Text column spacing */
+.left {
+    float: left;
+    width: 300px;
+	padding-right: 40px;
+}
+
+.right {
+    float: right;
+    width: 200px;
+}
+
+.middle {
+	width: 50%;
+   /*padding: 0px 230px 5px 230px;
+    margin: 0px;*/
+}
 	
+/* Content styles. Hidden and actual.*/	
+#content {
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	width: 500px;
+	/*opacity:0.6;
+	filter:alpha(opacity=60);*/
+}
+
+#hiddencontent {
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	width: 750px;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: none;
+}
+
+#aboutme {
+	position: absolute;
+	font-family: arial, verdana, sans-serif;
+	font-size: medium;
+	color: white;
+	margin: 15px;
+	text-align: left;
+	width: 450px;
+	background-color:rgba(0,0,0,.8);
+	}
+
+#aboutme p {
+	padding: 10px;
+	}
+	
+/*resume div styles */	
+#resume {
+	position: relative;
+	font-family: arial, verdana, sans-serif;
+	font-size: 14px;
+	margin: 50px 25px 100px 25px;
+	text-align: left;
+	}
+
+#resume h1 {
+	margin: -12px;
+	margin-top: -35px;
+	margin-bottom: 15px;
+	font-size: 32px;
+	}
+	
+#resume ul {
+	margin-left: 25px;
+	}
+
+.resumecategory {
+	border-bottom: 2px solid black;
+	margin-bottom: 5px;
+	}
+	
+#resume ul {
+	margin-left: 25px;
+	}
+	
+#resumeeducation span {
+	font-weight: bold;
+	}
+	
+#resumeheader {
+	text-align: center;
+	font-size: 115%;
+	font-weight: bold;
+	}
+	
+#resumeheader span {
+	font-size: 80%;
+	font-style: normal;
+	}
+
+#resumeexperience h5 {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;
+	}
+
+#resumeemployment p {
+	margin-left: 25px;
+	}
+
+/* portfolio div styles */
+#portfolio {
+	position: relative;
+	font-family: arial, verdana, sans-serif;
+	font-size: medium;
+	margin: 15px;
+	text-align: left;
+	}
+	
+#portfolio img {
+	padding: 4px;
+	border: 2px outset black;
+	background-color: white;
+	}
+
+.portfoliosection  {
+	border-right: 1px dashed black;
+	/* border-bottom: 1px dashed black;
+	border-top: 1px dashed black;*/
+	width: 650px;
+	clear: both;
+	}
+
+.portfoliosubtitle {
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform: rotate(90deg);
+	float: right;
+	position: relative;
+	right: -68px;
+	top: -273px;
+}
+	
+
+.webdesigndesc {
+	width: 600px;
+	margin-bottom: 15px;
+	clear: both;
+	}
+
+.webdesigndesc a {
+	float: left;
+	clear: both;
+	margin-right: 8px;
+	margin-bottom: 15px;
+	}
+
+.websubtitle {
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform: rotate(90deg);
+	float: right;
+	position: relative;
+	right: -11px;
+	top: -300px;
+}
+
+.wdesignsubtitle {
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform: rotate(90deg);
+	float: right;
+	position: relative;
+	right: -21px;
+	top: -290px;
+}
+
+/* social media div styles */	
+#socialmedia {
+	position: relative;
+	font-family: arial, verdana, sans-serif;
+	font-size: medium;
+	margin: 15px;
+	text-align: left;
+	clear: both;
+	}
+
+.smedia {
+	float: left;
+	
+	}
+	
+/* Menu and nav bar items CSS styles*/
+/* Dynamic elements modified from Tutorialzine tutorial: http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/ */
+
+#menu {
+	position:fixed;
+	/*background-color: rgba(193, 193, 193, 0.3);
+	border:1px solid;
+	width:90px;
+	height: 300px;
+	z-index:100;*/
+	top: 40%;
+}
+
+#nav a {
+	height:38px;
+	width:38px;
+	display:block;
+	position:relative;
+	color: black;
+	text-decoration: none;
+	font-size: 200%;
+	text-align: center;
+	vertical-align: center;
+	font-style: bold;
+	font-family: "Miller Headline Bold","Times New Roman","Times","Georgia","serif";
+}
+
+#nav li{
+	list-style:none;
+	height:39px;
+	padding:2px;
+	width:40px;
+}
+
+#nav span{
+	/* Container properties */
+	width:0;
+	left:38px;
+	padding:0;
+	position:absolute;
+	overflow:hidden;
+	z-index: 1000;
+
+	/* Text properties */
+	font-family:"Miller Headline Bold","Times New Roman","Times","Georgia","serif";
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:0.6px;
+	white-space:nowrap;
+	line-height:39px;
+	color: white;
+	
+	/* CSS3 Transition: */
+	-webkit-transition: 0.25s;
+	
+	/* Future proofing (these do not work yet): */
+	-moz-transition: 0.25s;
+	transition: 0.25s;
+}
+
+#nav a:hover span{ 
+	width:auto; 
+	padding:0 20px;
+	overflow:visible; 
+}
+	
+#nav a:hover{
+	text-decoration:none;
+	
+	
+	/* CSS outer glow with the box-shadow property 
+	-moz-box-shadow:0 0 5px gray;
+	-webkit-box-shadow:0 0 5px gray;
+	box-shadow:0 0 5px gray;*/
+}
+
+#nav .button {	
+	background-position:0 0;
+	background-color: white;
+	}
+	
+#nav .button:hover {	
+	background-position:0 -39px;
+	background-color: black;
+	color: white;
+	}
+
+#nav .button span{
+	background-color: white;
+	color: black;
+	/*text-shadow:1px 1px 0 #99bf31;*/
+}
