@@ -27,10 +27,10 @@ h5 {
 	margin: 1px;
 }
 
-.navbar>h4 {
+#storieslist>h4 {
 	margin: 1px;
 }
 
-section.navbar{
+section#storieslist{
 	margin-bottom: 15px;
 }
