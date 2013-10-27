@@ -1,0 +1,23 @@
+nav, footer{
+	background-color: #330000;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	color: #996633;
+					}
+
+li {
+	list-style-type: none;
+}
+
+
+h3 {
+	color: #330000;
+	font-family: Gill Sans, sans-serif;
+}
+
+.footer-text {
+	color: #996633;
+}

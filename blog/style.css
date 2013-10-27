@@ -1,0 +1,36 @@
+h1, h3 {
+	text-transform: uppercase;
+		}
+
+a:link, a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+					}
+
+li {
+	list-style-type: none;
+}
+
+h1 {
+	font-size: 100px;
+	font-family: Helvetica, sans-serif;
+	margin: 5px;
+	}
+
+h3 {
+	font-size: 25px;
+	margin: 1px;
+}
+
+h5 {
+	margin: 1px;
+}
+
+.navbar>h4 {
+	margin: 1px;
+}
+
+section.navbar{
+	margin-bottom: 15px;
+}
