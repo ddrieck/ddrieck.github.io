@@ -2,9 +2,8 @@ $(document).ready(function(){
 	alert("Page Loaded!");
 	//$(".product").find("img").fadeOut(2000);
 	$(".details").on("click", function(){
-		$(this).siblings().show();
+		$(this).parent().find(".description").show();
 	});
-	$(".eu").hide();
 	$(".eu-toggle").on("click", function(){
 		$(".eu").show();
 		$(".us").hide();
