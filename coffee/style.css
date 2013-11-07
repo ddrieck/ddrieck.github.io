@@ -1,5 +1,8 @@
 nav, footer{
 	background-color: #330000;
+	margin: auto;
+	text-align: center;
+	clear: both;
 }
 
 a:link, a:visited {
@@ -10,6 +13,12 @@ a:link, a:visited {
 
 li {
 	list-style-type: none;
+	padding-left: 25px;
+	display: inline;
+}
+
+ul {
+	margin: 1px;
 }
 
 
@@ -20,4 +29,32 @@ h3 {
 
 .footer-text {
 	color: #996633;
+}
+
+footer {
+	padding: 40px 0px 40px 0px;
+	margin-top: 25px;
+}
+
+#navbar {
+	padding: 5px 0px 2px 0px;
+}
+
+article {
+	float: left;
+	width: 46%;
+	text-align: center;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#article-text {
+	width: 80%;
+	margin: auto;
+}
+
+#site-title {
+	text-align: center;
+	width: 25px;
+	margin: auto;
 }

@@ -59,17 +59,19 @@ a:link, a:visited {
 
 li {
 	list-style-type: none;
+    float: left;
+    margin-right: 20px;
 }
 
 h1 {
 	font-family: 'league_gothicregular';
 	font-size: 100px;
-	margin: 5px;
+    margin: 0px;
 	}
 
 h3 {
 	font-size: 40px;
-	margin: 1px;
+	margin: 1px; 
 	font-family: 'league_gothicregular';
 }
 
@@ -78,12 +80,53 @@ h5 {
 }
 
 #storieslist>h4 {
-	margin: 1px;
+	margin:  10px 1px;
 }
 
-section#storieslist{
-	margin-bottom: 15px;
+#heading {
+    float:left; 
+    width: 40%;
+    height: 100px;
+ }
+
+#top-nav {
+    float:left;
+    display:inline;
+    width: 55%;
+    height: 100px;
 }
 
+#storieslist {
+    float: left;
+    width: 20%;
+    top: 160px;
+    margin-right: 100px;
+}
 
+#article-list {
+    float: left;
+    width: 60%;
+    top: 160px;
+}
 
+header {
+    height: 100px;
+    margin-bottom: 50px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    padding: 0px 25px 10px 25px;
+}
+
+ul {
+    width: 230px;
+    float: right;
+    position: absolute;
+    top: 60px;
+    right: 3px;
+    padding-right: 25px;
+}
+
+body {
+    padding: 0px 25px 0px 25px;
+}
