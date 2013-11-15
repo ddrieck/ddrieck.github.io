@@ -1,0 +1,74 @@
+nav, footer{
+	background-color: #230B03;
+	margin: auto;
+	text-align: center;
+	clear: both;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	color: #CDB49B;
+					}
+
+li {
+	list-style-type: none;
+	padding-left: 25px;
+	display: inline;
+}
+
+ul {
+	margin: 1px;
+}
+
+
+h3 {
+	color: #330000;
+	font-family: Gill Sans, sans-serif;
+}
+
+.footer-text {
+	color: #CDB49B;
+}
+
+footer {
+	padding: 40px 0px 40px 0px;
+	margin-top: 25px;
+}
+
+#navbar {
+	padding: 5px 0px 4px 0px;
+	margin: 10px 0px 25px 0px;
+	font-family: Georgia serif;
+	font-size: 22px;
+	font-weight: 100;
+}
+
+article {
+	float: left;
+	width: 46%;
+	text-align: center;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#article-text {
+	width: 80%;
+	margin: auto;
+}
+
+.site-title {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	background-image: url('beans.jpg');
+	height: 85%;
+	padding-top: 30px;
+	background-size: contain;
+	width: 100%;
+}
+
+

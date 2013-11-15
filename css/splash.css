@@ -1,0 +1,37 @@
+@font-face
+{
+	font-family: 'HelveticaNeueRegular';
+	src: url('../fonts/HelveticaNeue.eot');
+	src: local('Helvetica Neue Bold'), local('HelveticaNeue'), url('HelveticaNeue.woof')format('woof'), url('HelveticaNeue.ttf') format('truetype');
+}
+	
+@font-face
+{
+	font-family: 'HelveticaNeueCondensedBold';
+	src: url('../fonts/HelveticaNeue-CondensedBold.eot');
+	src: local('HelveticaNeue-CondensedBold'), local('HelveticaNeue-CondensedBold'), url('HelveticaNeue-CondensedBold.woff') format('woff'), url('HelveticaNeue-CondensedBold.ttf') format('truetype');
+}
+
+body
+{
+	margin: 24px 8px 8px 8px;
+	background-color: #FFFFFF;
+	background-image: url('../images/backgrounds/DeanAttacksSkyline.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left top;
+	
+	font-family: 'HelveticaNeueRegular';
+}
+
+/* NAVIGATION */
+div#nav h1
+{
+	margin: 0px 24px -20 px 0px;
+	font-size: 92px
+}
+div#nav
+{
+	text-align: right;
+	font-size: 24px;
+	color: FFFFFF;

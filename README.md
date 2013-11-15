@@ -1,5 +1,4 @@
-ddrieck.github.io
+ddrieck-com
+===========
 
-Testing some edits.
-Testing with laptop sync.
-=================
+Source code for www.ddrieck.com. Version 1 on 11/14.

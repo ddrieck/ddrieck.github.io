@@ -68,14 +68,9 @@ body {
 	background-color:rgba(0,0,0,.8);
 	}
 
-#aboutme p, h3{
+#aboutme p {
 	padding: 10px;
-	padding-left: 15px;
 	}
-
-#aboutme ul {
-	padding-left: 20px;
-}
 	
 /*resume div styles */	
 #resume {
