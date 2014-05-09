@@ -4,7 +4,7 @@
 }
 
 body {
-	background:url('http://www.ddrieck.com/images/background.jpg') no-repeat center center fixed;
+	background:url('../images/background.jpg') no-repeat center center fixed;
 	background-color: gray;
 	background-size: cover;
 	webkit-background-size: cover;
@@ -20,12 +20,11 @@ body {
 	bottom: 1px;
 	left: 1px;
 	right: 1px;
-	background-image:url('http://www.ddrieck.com/images/background.jpg');
+	background-image:url('../images/background_blur.jpg');
 	background-repeat:no-repeat;
 	background-attachment: fixed;
 	filter: blur(18px);
 	-webkit-filter: blur(9px);
-	filter: url('blur.svg#blur');
 }
 
 .title h1 {
