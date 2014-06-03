@@ -1,0 +1,183 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+background:url('../images/background.jpg') no-repeat center center fixed;
+background-color: gray;
+background-size: cover;
+webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+font-family: arial, verdana, tahoma;
+height: 100%;
+}
+
+.overlay {
+position: absolute;
+top: 1px;
+bottom: 1px;
+left: 1px;
+right: 1px;
+background-image:url('../images/background_blur.jpg');
+background-repeat:no-repeat;
+background-attachment: fixed;
+filter: blur(18px);
+-webkit-filter: blur(9px);
+}
+
+.title h1 {
+position: absolute;
+top: 10%;
+left: 100px;
+font-size: 5em;
+color: white;
+font-family: arial, verdana, sans-serif;
+}
+
+/* Content styles. Hidden and actual.*/	
+#content {
+position: absolute;
+top: 40%;
+left: 15%;
+width: 500px;
+/*opacity:0.6;
+filter:alpha(opacity=60);*/
+}
+
+#aboutme {
+position: absolute;
+font-family: arial, verdana, sans-serif;
+font-size: medium;
+color: white;
+text-align: center;
+width: 60%;
+top: 40%;
+left: 20%;
+background-color:rgba(0,0,0,.8);
+}
+
+#aboutme h2 {
+padding: 15px;
+}
+
+#aboutme a {
+color: white;
+}
+
+/* social media div styles */	
+#socialmedia {
+position: relative;
+font-family: arial, verdana, sans-serif;
+font-size: medium;
+margin: 15px;
+text-align: left;
+clear: both;
+}
+
+.smedia {
+float: left;
+}
+
+.smedia img {
+	width: 64px;
+	padding-left: 25%;
+}
+
+.services {
+	margin-left: 32%;
+}
+
+/* Menu and nav bar items CSS styles*/
+/* Dynamic elements modified from Tutorialzine tutorial: http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/ */
+
+#menu {
+position:fixed;
+/*background-color: rgba(193, 193, 193, 0.3);
+border:1px solid;
+width:90px;
+height: 300px;
+z-index:100;*/
+top: 40%;
+}
+
+#nav a {
+height:38px;
+width:38px;
+display:block;
+position:relative;
+color: black;
+text-decoration: none;
+font-size: 200%;
+text-align: center;
+vertical-align: center;
+font-style: bold;
+font-family: "Miller Headline Bold","Times New Roman","Times","Georgia","serif";
+}
+
+#nav li{
+list-style:none;
+height:39px;
+padding:2px;
+width:40px;
+}
+
+#nav span{
+/* Container properties */
+width:0;
+left:38px;
+padding:0;
+position:absolute;
+overflow:hidden;
+z-index: 1000;
+
+/* Text properties */
+font-family:"Miller Headline Bold","Times New Roman","Times","Georgia","serif";
+font-size:18px;
+font-weight:bold;
+letter-spacing:0.6px;
+white-space:nowrap;
+line-height:39px;
+color: white;
+
+/* CSS3 Transition: */
+-webkit-transition: 0.25s;
+
+/* Future proofing (these do not work yet): */
+-moz-transition: 0.25s;
+transition: 0.25s;
+}
+
+#nav a:hover span{
+width:auto;
+padding:0 20px;
+overflow:visible;
+}
+
+#nav a:hover{
+text-decoration:none;
+
+
+/* CSS outer glow with the box-shadow property
+-moz-box-shadow:0 0 5px gray;
+-webkit-box-shadow:0 0 5px gray;
+box-shadow:0 0 5px gray;*/
+}
+
+#nav .button {	
+background-position:0 0;
+background-color: white;
+}
+
+#nav .button:hover {	
+background-position:0 -39px;
+background-color: black;
+color: white;
+}
+
+#nav .button span{
+background-color: white;
+color: black;
+/*text-shadow:1px 1px 0 #99bf31;*/
+}
